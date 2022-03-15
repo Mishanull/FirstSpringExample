@@ -9,6 +9,12 @@ public class Order {
     public Order() {
     }
 
+    public Order(float amount, String description, boolean delivered) {
+        this.amount = amount;
+        this.description = description;
+        this.delivered = delivered;
+    }
+
     public Order(int id, float amount, String description, boolean delivered) {
         this.id = id;
         this.amount = amount;
