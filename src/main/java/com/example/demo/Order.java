@@ -1,6 +1,11 @@
 package com.example.demo;
 
+import org.springframework.data.annotation.Id;
+
+import javax.annotation.Generated;
+
 public class Order {
+    @Id
     int id;
     float amount;
     String description;

@@ -33,4 +33,20 @@ public class OrderRepositoryImpl  implements OrderRepository{
         ArrayList<Order> list = new ArrayList<>(orders);
         return list;
     }
+
+    @Override
+    public void deleteOrder(int id) {
+        map.remove(id);
+
+    }
+
+    @Override
+    public void createOrder(Order o) {
+        map.put(o.getId(),o);
+    }
+
+    @Override
+    public Order updateOrder(Order o) {
+        return map.put(o.getId(),o);
+    }
 }

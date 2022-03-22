@@ -11,4 +11,7 @@ import java.util.List;
 public interface OrderRepository {
     Order getOrder(int id);
     List<Order> getOrders();
+    void deleteOrder(int id);
+    void createOrder(Order o);
+    Order updateOrder(Order o);
 }
